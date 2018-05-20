@@ -143,7 +143,6 @@ public class CarrentalnewParser extends Parser {
 			switch (_input.LA(1)) {
 			case T__45:
 			case T__44:
-			case T__42:
 			case T__41:
 			case T__40:
 			case T__39:
@@ -151,13 +150,11 @@ public class CarrentalnewParser extends Parser {
 			case T__28:
 			case T__26:
 			case T__24:
-			case T__22:
 			case T__20:
 			case T__18:
 			case T__17:
 			case T__15:
 			case T__10:
-			case T__7:
 			case T__6:
 			case T__5:
 			case T__4:
@@ -1261,7 +1258,7 @@ public class CarrentalnewParser extends Parser {
 			else return visitor.visitChildren(this);
 		}
 	}
-	public static class Pola_DT_3Context extends DtContext {
+	public static class Pola_DT_2Context extends DtContext {
 		public List<NounContext> noun() {
 			return getRuleContexts(NounContext.class);
 		}
@@ -1276,34 +1273,6 @@ public class CarrentalnewParser extends Parser {
 		}
 		public NounContext noun(int i) {
 			return getRuleContext(NounContext.class,i);
-		}
-		public Pola_DT_3Context(DtContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CarrentalnewListener ) ((CarrentalnewListener)listener).enterPola_DT_3(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CarrentalnewListener ) ((CarrentalnewListener)listener).exitPola_DT_3(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CarrentalnewVisitor ) return ((CarrentalnewVisitor<? extends T>)visitor).visitPola_DT_3(this);
-			else return visitor.visitChildren(this);
-		}
-	}
-	public static class Pola_DT_2Context extends DtContext {
-		public NounContext noun() {
-			return getRuleContext(NounContext.class,0);
-		}
-		public KeywordContext keyword() {
-			return getRuleContext(KeywordContext.class,0);
-		}
-		public IdentifierContext identifier() {
-			return getRuleContext(IdentifierContext.class,0);
-		}
-		public VerbContext verb() {
-			return getRuleContext(VerbContext.class,0);
 		}
 		public Pola_DT_2Context(DtContext ctx) { copyFrom(ctx); }
 		@Override
@@ -1325,7 +1294,7 @@ public class CarrentalnewParser extends Parser {
 		DtContext _localctx = new DtContext(_ctx, getState());
 		enterRule(_localctx, 28, RULE_dt);
 		try {
-			setState(154);
+			setState(149);
 			switch ( getInterpreter().adaptivePredict(_input,8,_ctx) ) {
 			case 1:
 				_localctx = new Pola_DT_1Context(_localctx);
@@ -1341,22 +1310,11 @@ public class CarrentalnewParser extends Parser {
 				_localctx = new Pola_DT_2Context(_localctx);
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(143); keyword();
-				setState(144); identifier();
-				setState(145); verb();
-				setState(146); noun();
-				}
-				break;
-
-			case 3:
-				_localctx = new Pola_DT_3Context(_localctx);
-				enterOuterAlt(_localctx, 3);
-				{
-				setState(148); noun();
-				setState(149); keyword();
-				setState(150); identifier();
-				setState(151); verb();
-				setState(152); noun();
+				setState(143); noun();
+				setState(144); keyword();
+				setState(145); identifier();
+				setState(146); verb();
+				setState(147); noun();
 				}
 				break;
 			}
@@ -1399,7 +1357,7 @@ public class CarrentalnewParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(156);
+			setState(151);
 			_la = _input.LA(1);
 			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__45) | (1L << T__44) | (1L << T__24) | (1L << T__20) | (1L << T__15) | (1L << T__10) | (1L << T__6) | (1L << T__5) | (1L << T__4) | (1L << T__3))) != 0)) ) {
 			_errHandler.recoverInline(this);
@@ -1445,14 +1403,14 @@ public class CarrentalnewParser extends Parser {
 		enterRule(_localctx, 32, RULE_verb);
 		int _la;
 		try {
-			setState(160);
+			setState(155);
 			switch (_input.LA(1)) {
 			case T__43:
 			case T__33:
 			case T__25:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(158);
+				setState(153);
 				((VerbContext)_localctx).posessiveVerb = _input.LT(1);
 				_la = _input.LA(1);
 				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__43) | (1L << T__33) | (1L << T__25))) != 0)) ) {
@@ -1468,7 +1426,7 @@ public class CarrentalnewParser extends Parser {
 			case T__11:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(159);
+				setState(154);
 				((VerbContext)_localctx).verbConcept = _input.LT(1);
 				_la = _input.LA(1);
 				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__38) | (1L << T__29) | (1L << T__19) | (1L << T__13) | (1L << T__11))) != 0)) ) {
@@ -1519,7 +1477,7 @@ public class CarrentalnewParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(162);
+			setState(157);
 			_la = _input.LA(1);
 			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__42) | (1L << T__22) | (1L << T__7))) != 0)) ) {
 			_errHandler.recoverInline(this);
@@ -1539,7 +1497,7 @@ public class CarrentalnewParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\64\u00a7\4\2\t\2"+
+		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\64\u00a2\4\2\t\2"+
 		"\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13"+
 		"\t\13\4\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22"+
 		"\4\23\t\23\3\2\3\2\3\3\3\3\5\3+\n\3\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3"+
@@ -1549,44 +1507,42 @@ public class CarrentalnewParser extends Parser {
 		"\7h\13\7\5\7j\n\7\3\b\3\b\3\b\3\b\3\b\3\b\3\b\3\b\3\b\3\b\5\bv\n\b\3\t"+
 		"\3\t\3\n\3\n\3\13\3\13\3\f\3\f\3\r\3\r\3\16\3\16\3\17\3\17\3\17\3\17\3"+
 		"\17\3\17\3\17\3\17\5\17\u008c\n\17\3\20\3\20\3\20\3\20\3\20\3\20\3\20"+
-		"\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\5\20\u009d\n\20\3\21\3\21\3\22"+
-		"\3\22\5\22\u00a3\n\22\3\23\3\23\3\23\2\2\24\2\4\6\b\n\f\16\20\22\24\26"+
-		"\30\32\34\36 \"$\2\r\5\2\f\f\26\26\37\37\4\2\25\25  \6\2\7\t\24\24\36"+
-		"\36..\5\2\16\16\20\20\"\"\5\2\22\22\33\33\60\60\3\2\'(\4\2\13\13//\b\2"+
-		"\3\4\30\30\34\34!!&&*-\5\2\5\5\17\17\27\27\7\2\n\n\23\23\35\35##%%\5\2"+
-		"\6\6\32\32))\u00a6\2&\3\2\2\2\4*\3\2\2\2\68\3\2\2\2\bD\3\2\2\2\nF\3\2"+
-		"\2\2\fi\3\2\2\2\16u\3\2\2\2\20w\3\2\2\2\22y\3\2\2\2\24{\3\2\2\2\26}\3"+
-		"\2\2\2\30\177\3\2\2\2\32\u0081\3\2\2\2\34\u008b\3\2\2\2\36\u009c\3\2\2"+
-		"\2 \u009e\3\2\2\2\"\u00a2\3\2\2\2$\u00a4\3\2\2\2&\'\5\4\3\2\'\3\3\2\2"+
-		"\2(+\5\6\4\2)+\5\b\5\2*(\3\2\2\2*)\3\2\2\2+\5\3\2\2\2,-\5\n\6\2-.\5\f"+
-		"\7\2.9\3\2\2\2/\60\5\n\6\2\60\61\5\f\7\2\61\62\5\24\13\2\62\63\5\f\7\2"+
-		"\639\3\2\2\2\64\65\5\f\7\2\65\66\5\n\6\2\66\67\5\f\7\2\679\3\2\2\28,\3"+
-		"\2\2\28/\3\2\2\28\64\3\2\2\29\7\3\2\2\2:;\5\24\13\2;<\5\f\7\2<=\5\26\f"+
-		"\2=>\5\6\4\2>E\3\2\2\2?@\5\24\13\2@A\5\f\7\2AB\5\26\f\2BC\5\f\7\2CE\3"+
-		"\2\2\2D:\3\2\2\2D?\3\2\2\2E\t\3\2\2\2FG\t\2\2\2G\13\3\2\2\2HI\5\22\n\2"+
-		"IJ\5\34\17\2JK\5\"\22\2KL\5\22\n\2LM\5\34\17\2Mj\3\2\2\2NO\5\34\17\2O"+
-		"P\5\20\t\2PQ\5\"\22\2QR\5\34\17\2Rj\3\2\2\2ST\5\34\17\2TU\5\"\22\2UV\5"+
-		"\34\17\2VW\5\"\22\2WX\5\34\17\2Xj\3\2\2\2YZ\5\34\17\2Z[\5\"\22\2[\\\5"+
-		"\34\17\2\\j\3\2\2\2]f\5\34\17\2^a\5\30\r\2_a\5\32\16\2`^\3\2\2\2`_\3\2"+
-		"\2\2ab\3\2\2\2bc\5\34\17\2ce\3\2\2\2d`\3\2\2\2eh\3\2\2\2fd\3\2\2\2fg\3"+
-		"\2\2\2gj\3\2\2\2hf\3\2\2\2iH\3\2\2\2iN\3\2\2\2iS\3\2\2\2iY\3\2\2\2i]\3"+
-		"\2\2\2j\r\3\2\2\2kl\7\21\2\2lv\7\61\2\2mn\7$\2\2nv\7\61\2\2op\7\r\2\2"+
-		"pv\7\61\2\2qr\7\21\2\2rs\7\61\2\2st\7\31\2\2tv\7\61\2\2uk\3\2\2\2um\3"+
-		"\2\2\2uo\3\2\2\2uq\3\2\2\2v\17\3\2\2\2wx\t\3\2\2x\21\3\2\2\2yz\t\4\2\2"+
-		"z\23\3\2\2\2{|\t\5\2\2|\25\3\2\2\2}~\t\6\2\2~\27\3\2\2\2\177\u0080\t\7"+
-		"\2\2\u0080\31\3\2\2\2\u0081\u0082\t\b\2\2\u0082\33\3\2\2\2\u0083\u008c"+
-		"\5\36\20\2\u0084\u008c\5 \21\2\u0085\u0086\5\36\20\2\u0086\u0087\5$\23"+
-		"\2\u0087\u0088\5\20\t\2\u0088\u0089\5\"\22\2\u0089\u008a\5\34\17\2\u008a"+
-		"\u008c\3\2\2\2\u008b\u0083\3\2\2\2\u008b\u0084\3\2\2\2\u008b\u0085\3\2"+
-		"\2\2\u008c\35\3\2\2\2\u008d\u008e\5 \21\2\u008e\u008f\5\"\22\2\u008f\u0090"+
-		"\5 \21\2\u0090\u009d\3\2\2\2\u0091\u0092\5$\23\2\u0092\u0093\5\20\t\2"+
-		"\u0093\u0094\5\"\22\2\u0094\u0095\5 \21\2\u0095\u009d\3\2\2\2\u0096\u0097"+
-		"\5 \21\2\u0097\u0098\5$\23\2\u0098\u0099\5\20\t\2\u0099\u009a\5\"\22\2"+
-		"\u009a\u009b\5 \21\2\u009b\u009d\3\2\2\2\u009c\u008d\3\2\2\2\u009c\u0091"+
-		"\3\2\2\2\u009c\u0096\3\2\2\2\u009d\37\3\2\2\2\u009e\u009f\t\t\2\2\u009f"+
-		"!\3\2\2\2\u00a0\u00a3\t\n\2\2\u00a1\u00a3\t\13\2\2\u00a2\u00a0\3\2\2\2"+
-		"\u00a2\u00a1\3\2\2\2\u00a3#\3\2\2\2\u00a4\u00a5\t\f\2\2\u00a5%\3\2\2\2"+
-		"\f*8D`fiu\u008b\u009c\u00a2";
+		"\3\20\3\20\3\20\5\20\u0098\n\20\3\21\3\21\3\22\3\22\5\22\u009e\n\22\3"+
+		"\23\3\23\3\23\2\2\24\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$\2\r\5"+
+		"\2\f\f\26\26\37\37\4\2\25\25  \6\2\7\t\24\24\36\36..\5\2\16\16\20\20\""+
+		"\"\5\2\22\22\33\33\60\60\3\2\'(\4\2\13\13//\b\2\3\4\30\30\34\34!!&&*-"+
+		"\5\2\5\5\17\17\27\27\7\2\n\n\23\23\35\35##%%\5\2\6\6\32\32))\u00a0\2&"+
+		"\3\2\2\2\4*\3\2\2\2\68\3\2\2\2\bD\3\2\2\2\nF\3\2\2\2\fi\3\2\2\2\16u\3"+
+		"\2\2\2\20w\3\2\2\2\22y\3\2\2\2\24{\3\2\2\2\26}\3\2\2\2\30\177\3\2\2\2"+
+		"\32\u0081\3\2\2\2\34\u008b\3\2\2\2\36\u0097\3\2\2\2 \u0099\3\2\2\2\"\u009d"+
+		"\3\2\2\2$\u009f\3\2\2\2&\'\5\4\3\2\'\3\3\2\2\2(+\5\6\4\2)+\5\b\5\2*(\3"+
+		"\2\2\2*)\3\2\2\2+\5\3\2\2\2,-\5\n\6\2-.\5\f\7\2.9\3\2\2\2/\60\5\n\6\2"+
+		"\60\61\5\f\7\2\61\62\5\24\13\2\62\63\5\f\7\2\639\3\2\2\2\64\65\5\f\7\2"+
+		"\65\66\5\n\6\2\66\67\5\f\7\2\679\3\2\2\28,\3\2\2\28/\3\2\2\28\64\3\2\2"+
+		"\29\7\3\2\2\2:;\5\24\13\2;<\5\f\7\2<=\5\26\f\2=>\5\6\4\2>E\3\2\2\2?@\5"+
+		"\24\13\2@A\5\f\7\2AB\5\26\f\2BC\5\f\7\2CE\3\2\2\2D:\3\2\2\2D?\3\2\2\2"+
+		"E\t\3\2\2\2FG\t\2\2\2G\13\3\2\2\2HI\5\22\n\2IJ\5\34\17\2JK\5\"\22\2KL"+
+		"\5\22\n\2LM\5\34\17\2Mj\3\2\2\2NO\5\34\17\2OP\5\20\t\2PQ\5\"\22\2QR\5"+
+		"\34\17\2Rj\3\2\2\2ST\5\34\17\2TU\5\"\22\2UV\5\34\17\2VW\5\"\22\2WX\5\34"+
+		"\17\2Xj\3\2\2\2YZ\5\34\17\2Z[\5\"\22\2[\\\5\34\17\2\\j\3\2\2\2]f\5\34"+
+		"\17\2^a\5\30\r\2_a\5\32\16\2`^\3\2\2\2`_\3\2\2\2ab\3\2\2\2bc\5\34\17\2"+
+		"ce\3\2\2\2d`\3\2\2\2eh\3\2\2\2fd\3\2\2\2fg\3\2\2\2gj\3\2\2\2hf\3\2\2\2"+
+		"iH\3\2\2\2iN\3\2\2\2iS\3\2\2\2iY\3\2\2\2i]\3\2\2\2j\r\3\2\2\2kl\7\21\2"+
+		"\2lv\7\61\2\2mn\7$\2\2nv\7\61\2\2op\7\r\2\2pv\7\61\2\2qr\7\21\2\2rs\7"+
+		"\61\2\2st\7\31\2\2tv\7\61\2\2uk\3\2\2\2um\3\2\2\2uo\3\2\2\2uq\3\2\2\2"+
+		"v\17\3\2\2\2wx\t\3\2\2x\21\3\2\2\2yz\t\4\2\2z\23\3\2\2\2{|\t\5\2\2|\25"+
+		"\3\2\2\2}~\t\6\2\2~\27\3\2\2\2\177\u0080\t\7\2\2\u0080\31\3\2\2\2\u0081"+
+		"\u0082\t\b\2\2\u0082\33\3\2\2\2\u0083\u008c\5\36\20\2\u0084\u008c\5 \21"+
+		"\2\u0085\u0086\5\36\20\2\u0086\u0087\5$\23\2\u0087\u0088\5\20\t\2\u0088"+
+		"\u0089\5\"\22\2\u0089\u008a\5\34\17\2\u008a\u008c\3\2\2\2\u008b\u0083"+
+		"\3\2\2\2\u008b\u0084\3\2\2\2\u008b\u0085\3\2\2\2\u008c\35\3\2\2\2\u008d"+
+		"\u008e\5 \21\2\u008e\u008f\5\"\22\2\u008f\u0090\5 \21\2\u0090\u0098\3"+
+		"\2\2\2\u0091\u0092\5 \21\2\u0092\u0093\5$\23\2\u0093\u0094\5\20\t\2\u0094"+
+		"\u0095\5\"\22\2\u0095\u0096\5 \21\2\u0096\u0098\3\2\2\2\u0097\u008d\3"+
+		"\2\2\2\u0097\u0091\3\2\2\2\u0098\37\3\2\2\2\u0099\u009a\t\t\2\2\u009a"+
+		"!\3\2\2\2\u009b\u009e\t\n\2\2\u009c\u009e\t\13\2\2\u009d\u009b\3\2\2\2"+
+		"\u009d\u009c\3\2\2\2\u009e#\3\2\2\2\u009f\u00a0\t\f\2\2\u00a0%\3\2\2\2"+
+		"\f*8D`fiu\u008b\u0097\u009d";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

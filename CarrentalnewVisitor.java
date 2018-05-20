@@ -191,14 +191,6 @@ public interface CarrentalnewVisitor<T> extends ParseTreeVisitor<T> {
 	T visitPola_DT_1(@NotNull CarrentalnewParser.Pola_DT_1Context ctx);
 
 	/**
-	 * Visit a parse tree produced by the {@code pola_DT_3}
-	 * labeled alternative in {@link CarrentalnewParser#dt}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitPola_DT_3(@NotNull CarrentalnewParser.Pola_DT_3Context ctx);
-
-	/**
 	 * Visit a parse tree produced by the {@code pola_DT_2}
 	 * labeled alternative in {@link CarrentalnewParser#dt}.
 	 * @param ctx the parse tree

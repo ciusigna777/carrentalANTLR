@@ -296,19 +296,6 @@ public interface CarrentalnewListener extends ParseTreeListener {
 	void exitPola_DT_1(@NotNull CarrentalnewParser.Pola_DT_1Context ctx);
 
 	/**
-	 * Enter a parse tree produced by the {@code pola_DT_3}
-	 * labeled alternative in {@link CarrentalnewParser#dt}.
-	 * @param ctx the parse tree
-	 */
-	void enterPola_DT_3(@NotNull CarrentalnewParser.Pola_DT_3Context ctx);
-	/**
-	 * Exit a parse tree produced by the {@code pola_DT_3}
-	 * labeled alternative in {@link CarrentalnewParser#dt}.
-	 * @param ctx the parse tree
-	 */
-	void exitPola_DT_3(@NotNull CarrentalnewParser.Pola_DT_3Context ctx);
-
-	/**
 	 * Enter a parse tree produced by the {@code pola_DT_2}
 	 * labeled alternative in {@link CarrentalnewParser#dt}.
 	 * @param ctx the parse tree

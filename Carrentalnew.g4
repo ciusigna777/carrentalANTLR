@@ -49,8 +49,7 @@ term :  dt #term_type1
 
 
 dt: noun verb noun #pola_DT_1 
-   |keyword identifier verb noun #pola_DT_2
-   |noun keyword identifier verb noun #pola_DT_3;
+   |noun keyword identifier verb noun #pola_DT_2;
 noun: 'operating company' | 'insurer' | 'estimated rental price' | 'credit card'
 				   |'renter'|'rental'|'open rental'|'price conversion'|'rental price'
 				   |'currency';
