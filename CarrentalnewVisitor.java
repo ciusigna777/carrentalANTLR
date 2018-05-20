@@ -39,13 +39,6 @@ public interface CarrentalnewVisitor<T> extends ParseTreeVisitor<T> {
 	T visitNumberedQuantification(@NotNull CarrentalnewParser.NumberedQuantificationContext ctx);
 
 	/**
-	 * Visit a parse tree produced by {@link CarrentalnewParser#term}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitTerm(@NotNull CarrentalnewParser.TermContext ctx);
-
-	/**
 	 * Visit a parse tree produced by {@link CarrentalnewParser#keyword}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -95,11 +88,35 @@ public interface CarrentalnewVisitor<T> extends ParseTreeVisitor<T> {
 	T visitNoun(@NotNull CarrentalnewParser.NounContext ctx);
 
 	/**
+	 * Visit a parse tree produced by the {@code term_type3}
+	 * labeled alternative in {@link CarrentalnewParser#term}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTerm_type3(@NotNull CarrentalnewParser.Term_type3Context ctx);
+
+	/**
+	 * Visit a parse tree produced by the {@code term_type2}
+	 * labeled alternative in {@link CarrentalnewParser#term}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTerm_type2(@NotNull CarrentalnewParser.Term_type2Context ctx);
+
+	/**
 	 * Visit a parse tree produced by {@link CarrentalnewParser#iftoken}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitIftoken(@NotNull CarrentalnewParser.IftokenContext ctx);
+
+	/**
+	 * Visit a parse tree produced by the {@code term_type1}
+	 * labeled alternative in {@link CarrentalnewParser#term}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTerm_type1(@NotNull CarrentalnewParser.Term_type1Context ctx);
 
 	/**
 	 * Visit a parse tree produced by the {@code ifthenelse_1}

@@ -52,17 +52,6 @@ public interface CarrentalnewListener extends ParseTreeListener {
 	void exitNumberedQuantification(@NotNull CarrentalnewParser.NumberedQuantificationContext ctx);
 
 	/**
-	 * Enter a parse tree produced by {@link CarrentalnewParser#term}.
-	 * @param ctx the parse tree
-	 */
-	void enterTerm(@NotNull CarrentalnewParser.TermContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link CarrentalnewParser#term}.
-	 * @param ctx the parse tree
-	 */
-	void exitTerm(@NotNull CarrentalnewParser.TermContext ctx);
-
-	/**
 	 * Enter a parse tree produced by {@link CarrentalnewParser#keyword}.
 	 * @param ctx the parse tree
 	 */
@@ -140,6 +129,32 @@ public interface CarrentalnewListener extends ParseTreeListener {
 	void exitNoun(@NotNull CarrentalnewParser.NounContext ctx);
 
 	/**
+	 * Enter a parse tree produced by the {@code term_type3}
+	 * labeled alternative in {@link CarrentalnewParser#term}.
+	 * @param ctx the parse tree
+	 */
+	void enterTerm_type3(@NotNull CarrentalnewParser.Term_type3Context ctx);
+	/**
+	 * Exit a parse tree produced by the {@code term_type3}
+	 * labeled alternative in {@link CarrentalnewParser#term}.
+	 * @param ctx the parse tree
+	 */
+	void exitTerm_type3(@NotNull CarrentalnewParser.Term_type3Context ctx);
+
+	/**
+	 * Enter a parse tree produced by the {@code term_type2}
+	 * labeled alternative in {@link CarrentalnewParser#term}.
+	 * @param ctx the parse tree
+	 */
+	void enterTerm_type2(@NotNull CarrentalnewParser.Term_type2Context ctx);
+	/**
+	 * Exit a parse tree produced by the {@code term_type2}
+	 * labeled alternative in {@link CarrentalnewParser#term}.
+	 * @param ctx the parse tree
+	 */
+	void exitTerm_type2(@NotNull CarrentalnewParser.Term_type2Context ctx);
+
+	/**
 	 * Enter a parse tree produced by {@link CarrentalnewParser#iftoken}.
 	 * @param ctx the parse tree
 	 */
@@ -149,6 +164,19 @@ public interface CarrentalnewListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitIftoken(@NotNull CarrentalnewParser.IftokenContext ctx);
+
+	/**
+	 * Enter a parse tree produced by the {@code term_type1}
+	 * labeled alternative in {@link CarrentalnewParser#term}.
+	 * @param ctx the parse tree
+	 */
+	void enterTerm_type1(@NotNull CarrentalnewParser.Term_type1Context ctx);
+	/**
+	 * Exit a parse tree produced by the {@code term_type1}
+	 * labeled alternative in {@link CarrentalnewParser#term}.
+	 * @param ctx the parse tree
+	 */
+	void exitTerm_type1(@NotNull CarrentalnewParser.Term_type1Context ctx);
 
 	/**
 	 * Enter a parse tree produced by the {@code ifthenelse_1}

@@ -43,7 +43,9 @@ thentoken: 'then'|'THEN'|'Then';
 
 disjunction: 'or'|'OR';
 conjunction: 'and'|'AND';
-term : dt|noun;
+term :  dt #term_type1
+       |noun #term_type2
+	   |dt keyword identifier verb term #term_type3;
 
 
 dt: noun verb noun #pola_DT_1 

@@ -68,19 +68,6 @@ public class CarrentalnewBaseListener implements CarrentalnewListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTerm(@NotNull CarrentalnewParser.TermContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitTerm(@NotNull CarrentalnewParser.TermContext ctx) { }
-
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterKeyword(@NotNull CarrentalnewParser.KeywordContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -172,6 +159,32 @@ public class CarrentalnewBaseListener implements CarrentalnewListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterTerm_type3(@NotNull CarrentalnewParser.Term_type3Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTerm_type3(@NotNull CarrentalnewParser.Term_type3Context ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTerm_type2(@NotNull CarrentalnewParser.Term_type2Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTerm_type2(@NotNull CarrentalnewParser.Term_type2Context ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterIftoken(@NotNull CarrentalnewParser.IftokenContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -179,6 +192,19 @@ public class CarrentalnewBaseListener implements CarrentalnewListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitIftoken(@NotNull CarrentalnewParser.IftokenContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTerm_type1(@NotNull CarrentalnewParser.Term_type1Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTerm_type1(@NotNull CarrentalnewParser.Term_type1Context ctx) { }
 
 	/**
 	 * {@inheritDoc}
